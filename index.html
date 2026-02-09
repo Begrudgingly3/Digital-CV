@@ -1,37 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="main.js"></script>
-    <title>interactive digital CV</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Interactive Digital CV</title>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a class="nav-buttons" href="#">Home</a></li>
-          <li><a class="nav-buttons" href="projects.html">Projects</a></li>
-          <li><a class="nav-buttons" href="#">Experience</a></li>
-          <li><a class="nav-buttons" href="#">Skills</a></li>
-          <li><a class="nav-buttons" href="#">About</a></li>
-          <li><a class="nav-buttons" href="#">Contact</a></li>
+          <li><a class="nav-buttons" href="index.html">Home</a></li>
+          <li>
+            <a class="nav-buttons" href="#profile">Projects</a>
+          </li>
+          <li><a class="nav-buttons" href="#experience">Experience</a></li>
+          <li><a class="nav-buttons" href="#skills">Skills</a></li>
+          <li><a class="nav-buttons" href="#about">About</a></li>
+          <li><a class="nav-buttons" href="#experience">Contact</a></li>
           <li>
             <a class="nav-buttons" href="https://github.com/Begrudgingly3"
               >GitHub</a
             >
           </li>
+          <li>
+            <a
+              class="nav-buttons"
+              href="https://uk.linkedin.com/in/titas-grambovskis"
+              >LinkedIn</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-    <h1>Welcome to my CV</h1>
-    <h2>Student of Worcester College | S1120635@howcollege.ac.uk</h2>
+    <section id="hero">
+      <div id="island"></div>
+      <h1>Welcome to my CV</h1>
+      <h2>Student of Worcester College | S1120635@howcollege.ac.uk</h2>
+    </section>
+    <section id="about">
+      <img
+        src="/public/images/me.png"
+        id="image1"
+        alt="my picture"
+        width="350"
+        height="350"
+        title="me"
+      />
+      <div id="about-card">
+        <h1>John Ceevee</h1>
+        <h2>Super skilled junior developer</h2>
+        <p>
+          I am very pragmatic and analytical person that puts 110% into anything
+          I do
+        </p>
+      </div>
+    </section>
+    <section id="profile">
+      <h2>Profile</h2>
+      <p>
+        I am a junior server technician based in Worcestershire that knows the
+        linux system and command tools.<br />
+        I'm looking for work in the software development field. I have a good
+        understanding of Git and the
+        <br />terminal in general. I have a great understanding of the
+        foundational HTML, CSS and JS.
+      </p>
+    </section>
+    <div id="info">
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+          <li>Tailwind</li>
+          <li>NextJS</li>
+          <li>CSS</li>
+        </ul>
+      </section>
+      <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+          <li>
+            2025 - Godot Back-End server development using Python and GDscript
+          </li>
+          <li>2024 - Created a NextJS SaaS application</li>
+        </ul>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li>GCSE English</li>
+          <li>GCSE Business</li>
+          <li>GCSE ICT</li>
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <p>Titas Sinkevicius ©</p>
+    </footer>
   </body>
 </html>

@@ -1,5 +1,5 @@
 * {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Bitcount Single", system-ui;
   padding: 0;
   margin: 0;
 
@@ -10,7 +10,9 @@
 }
 
 body {
-  background-color: var(--primary);
+  background-color: #28262c;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -36,6 +38,74 @@ nav ul {
   text-decoration: none;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+#hero {
+  background-image: url("https://images.unsplash.com/photo-1625535069654-cfeb8f829088?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+#island {
+  background-color: #14248a;
+  margin-top: 40px;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 40px;
+}
+
+#about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 5rem;
+  gap: 5em;
+}
+
+#about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #998fc7;
+  padding: 5rem;
+  border-radius: 40px;
+  box-shadow: 5px 5px 70px #14248a;
+  color: #f9f5ff;
+  padding: 4rem;
+}
+
+#about-card h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+#about-card h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+#about-card p {
+  margin: 0;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+#about,
+img {
+  border-radius: 20%;
+}
+
 h1 {
   color: var(--font);
   display: flex;
@@ -52,4 +122,156 @@ h2 {
   text-align: center;
   text-decoration: none;
   color: var(--font);
+  padding-bottom: 5rem;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #998fc7;
+  text-align: center;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 5em;
+}
+
+#profile h2 {
+  color: #f9f5ff;
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 0.2em;
+  text-decoration: g;
+}
+
+#profile p {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #f9f5ff;
+  margin: 0;
+  padding: 2em;
+  line-height: 1.7em;
+}
+
+#info {
+  display: flex;
+  align-items: baseline;
+}
+
+#experience {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#experience h2 {
+  color: #f9f5ff;
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 0.2em;
+  text-decoration: none;
+}
+
+#experience ul {
+  list-style-type: none;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #f9f5ff;
+  margin: 0;
+  padding: 2em;
+  line-height: 1.7em;
+}
+
+#experience li {
+  margin-bottom: 1.2em;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 5em;
+}
+
+#skills h2 {
+  color: #f9f5ff;
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 0.2em;
+  text-decoration: none;
+}
+
+#skills ul {
+  list-style: none;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #f9f5ff;
+  margin: 0;
+  padding: 5em;
+  line-height: 1.7em;
+}
+
+#skills li {
+  margin-bottom: 1.2em;
+}
+
+#education {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 5em;
+}
+
+#education h2 {
+  color: #f9f5ff;
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 0.2em;
+  text-decoration: none;
+}
+
+#education ul {
+  list-style: none;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #f9f5ff;
+  margin: 0;
+  padding: 2em;
+  line-height: 1.7em;
+}
+
+#education li {
+  margin-bottom: 1.2em;
 }
